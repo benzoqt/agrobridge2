@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Nirmala UI', 'Segoe UI', system-ui, sans-serif;
+  --color-agro-green: #1b7a2e;
+  --color-agro-green-dark: #145d23;
+  --color-agro-saffron: #f5841f;
+  --color-agro-navy: #1a2b6d;
+  --color-agro-canvas: #f8f9fa;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f8f9fa;
+  color: #172033;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.ministry-shell {
+  position: relative;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.tricolor-top,
+.tricolor-bottom {
+  height: 5px;
+  width: 100%;
+}
+
+.tricolor-top {
+  background: #f5841f;
+}
+
+.tricolor-bottom {
+  background: #1b7a2e;
+}
+
+.bilingual-hi {
+  display: block;
+  margin-top: 0.1rem;
+  color: #697386;
+  font-size: 0.75em;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.bilingual-hi.on-dark {
+  color: rgb(220 252 231 / 0.85);
+}
+
+.field-label {
+  display: block;
+  color: #1a2b6d;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.input-control {
+  width: 100%;
+  border: 1px solid #dce1e7;
+  border-radius: 0.85rem;
+  background: #fff;
+  padding: 0.8rem 0.9rem;
+  color: #172033;
+  outline: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.input-control:focus {
+  border-color: #1b7a2e;
+  box-shadow: 0 0 0 3px rgb(27 122 46 / 0.12);
+}
+
+.bottom-nav {
+  border-top: 1px solid #e6e9ee;
+  background: rgb(255 255 255 / 0.97);
+  box-shadow: 0 -8px 24px rgb(15 35 25 / 0.06);
+}
